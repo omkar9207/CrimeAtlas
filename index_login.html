@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1440, initial-scale=1" />
+  <title>CrimeAtlas Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles_login.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">Mapping crime, protecting communities</div>
+      <nav class="header-right">
+        <a href="#map">Map</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#portal">Portal</a>
+        <a href="index_landing.html" class="btn home-btn">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <form id="login-form" novalidate>
+        <h1>Welcome Back</h1>
+        <label for="email" class="sr-only">Email or Phone Number</label>
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="Email ID or Phone Number"
+          autocomplete="username"
+          required
+        />
+        <label for="password" class="sr-only">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+          autocomplete="current-password"
+          required
+        />
+        <button type="submit" class="btn-submit">Log In</button>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <div class="signup-text">
+          <span>Don't have an account?</span>
+          <a href="#signup" class="link-signup">Sign Up</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

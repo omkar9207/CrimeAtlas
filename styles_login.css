@@ -1,0 +1,242 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #222222;
+  height: 2388px;
+  width: 1440px;
+  max-width: 1440px;
+  overflow-x: auto;
+}
+
+header {
+  background: #fff;
+  height: 64px;
+  border-bottom: 1px solid #e7e7e7;
+  position: fixed;
+  top: 0;
+  width: 1440px;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+}
+
+.header-left {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  user-select: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header-right a {
+  color: #222222;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 0;
+  user-select: none;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+}
+
+.header-right a:hover,
+.header-right a:focus {
+  color: #000000;
+  outline: none;
+}
+
+.btn, a.btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  background-color:black;
+  color:white;
+}
+
+.home-btn {
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  background-color: #222;
+  color: #fff !important;;
+  outline: none;
+}
+
+main {
+  padding-top: 128px;
+  width: 1440px;
+  height: calc(2388px - 64px);
+  box-sizing: border-box;
+}
+
+.login-section {
+  height: 655px;
+  max-width: 600px;
+  padding-left: 112px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 400px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0 0 16px 0;
+  color: #222222;
+  user-select: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 20px;
+  border-radius: 40px;
+  border: 1px solid #d1d1d1;
+  outline-offset: 2px;
+  box-sizing: border-box;
+  color: #222222;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #9c9c9c;
+  opacity: 1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.btn-submit {
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #222222;
+  outline: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px 0 24px;
+  user-select: none;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #d1d1d1;
+  border-radius: 0.5px;
+}
+
+.divider > span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #9c9c9c;
+}
+
+.signup-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  user-select: none;
+}
+
+.link-signup {
+  color: #222222;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: text;
+}
+
+.link-signup:hover,
+.link-signup:focus {
+  color: #000000;
+  outline: none;
+}
+
+/* Accessibility and screen reader only */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
